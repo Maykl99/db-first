@@ -1,0 +1,39 @@
+Sviluppare una tabella che riguarda le auto di un concessionario di auto usate.
+La seguente tabella dovrà contenere i dati che possono servire al gestore di attività.
+Pensate prima ai campi che servono,
+poi al tipo di dato che devono conservare ed infine agli attributi.
+
+Nome tabella 'Auto usate'
+
+valori tabella              tipo-dato           attributi
+
+id                          SMALL               PRIMARY KEY, UNIQUE, NOTNULL AUTO_INCREMENT 
+marca                       VARCHAR(50)         NOTNULL
+modello                     VARCHAR(50)         NOTNULL
+alimentazione               VARCHAR(30)         DEFAULT
+porte                       TINYINT             DEFAULT
+euro                        TINYINT             NOTNULL
+cilindrata                  TINYINT             NOTNULL
+accessori                   TEXT                NULL
+cambio                      VARCHAR(30)         DEFAULT
+km_percorsi                 SMALL               NOTNULL   
+anno_di_immatricolazione    DATE                NOTNULL
+prezzo                      FLOAT(7,2)          NOTNULL
+potenza                     TINYINT             NOTNULL
+peso                        SMALL               NULL
+colore                      VARCHAR(50)         NULL
+tipo                        VARCHAR(50)         NOTNULL
+disponibilità               TINYINT             DEFAULT(1)
+
+
+_______________________________________________________________________________________
+|    ID    |    MARCA       MODELLO      ALIMENTAZIONE       PORTE                                                      
+|__________|
+|   1           Hyundai    Ioniq          Benzina            5
+|   2
+|   3
+|   4
+|   5
+|   6
+|   7
+|   8
